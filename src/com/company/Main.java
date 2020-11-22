@@ -4,8 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int u=0;
-        int v=0;
+        int u=0, v=0;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your Start");
         String start=sc.nextLine();
