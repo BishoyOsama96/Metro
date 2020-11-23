@@ -14,7 +14,6 @@ public class Station {
             "Ezbet El-Nakhl","El-Marg","New El-Marg"));
 
     static ArrayList<String> list2=new ArrayList<>(Arrays.asList( "El-Mounib","Sakiat Mekky"," Omm El-Masryeen","Giza","Faisal","Cairo University "
-
             ,"El Bohoth","Dokki","Opera","Sadat","Mohamed Naguib","Attaba",
             "Al Shohadaa","Masarra","Rod El-Farag","St. Teresa","Khalafawy","Mezallat",
             "Kolleyyet El-Zeraa","Shubra El-Kheima"
