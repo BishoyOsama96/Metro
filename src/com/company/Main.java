@@ -1,13 +1,10 @@
 package com.company;
 import java.util.Scanner;
 public class Main {
-
-
     public static void main(String[] args) {
         Station st=new Station();
         int u, v,nostation,extime,wtime=4;
         byte t = 0;
-
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your Start");
         String start=sc.nextLine();
@@ -24,9 +21,7 @@ public class Main {
             System.out.println("your rout is "+st.line1.subList(Math.min(u,v),Math.max(u,v+1)));
             System.out.println("your ticket will cost: "+t+" pounds");
             System.out.println("expected time is "+extime+"m");
-
         }
-
         else if(st.line2.contains(start) && st.line2.contains(destination)){
         u=st.line2.indexOf(start);
         v=st.line2.indexOf(destination);
@@ -51,7 +46,4 @@ public class Main {
         }
     else
             System.out.println("There is no Metro line connects your start with your destination.");
-    
-}
-
-}
+}}
