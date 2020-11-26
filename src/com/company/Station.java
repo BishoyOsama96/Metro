@@ -19,12 +19,13 @@ public class Station {
             "Opera","Sadat","Mohamed Naguib","Attaba",
             "Al Shohadaa","Masarra","Rod El-Farag","St. Teresa",
             "Khalafawy","Mezallat", "Kolleyyet El-Zeraa","Shubra El-Kheima"));
-   public ArrayList<String> line3=new ArrayList<>(Arrays.asList("Airport","Ahmed Galal","Adly Mansour","El Haykestep","Omar Ibn El-Khattab",
-            "Qobaa","Hesham Barakat","El-Nozha","Nadi El-Shams","Alf Maskan","Heliopolis Square",
-            "Haroun","Al-Ahram","Koleyet El-Banat","Stadium","Fair Zone","Abbassiya",
-            "Abdou Pasha","El-Geish","Bab El-Shaaria","Attaba","Nasser","Maspero","Zamalek",
-            "Kit Kat","Sudan","Imbaba","El-Bohy","El-Kawmeya Al-Arabiya","Ring Road","Rod El-Farag",
-            "El-Tawfikeya","Wadi El-Nil","Gamaat El Dowal Al-Arabiya","Bulaq El-Dakroor","Cairo University"));
+   public ArrayList<String> line3=new ArrayList<>(Arrays.asList("Airport","Ahmed Galal",
+           "Adly Mansour","El Haykestep","Omar Ibn El-Khattab", "Qobaa","Hesham Barakat",
+           "El-Nozha","Nadi El-Shams","Alf Maskan","Heliopolis Square", "Haroun","Al-Ahram",
+           "Koleyet El-Banat", "Stadium","Fair Zone","Abbassiya", "Abdou Pasha","El-Geish",
+           "Bab El-Shaaria","Attaba","Nasser","Maspero", "Zamalek", "Kit Kat","Sudan","Imbaba",
+           "El-Bohy","El-Kawmeya Al-Arabiya","Ring Road","Rod El-Farag","El-Tawfikeya",
+           "Wadi El-Nil","Gamaat El Dowal Al-Arabiya","Bulaq El-Dakroor","Cairo University"));
 public  byte ticket(int Count){
     if (Count >= 1 && Count <= 9) {
         this.price= 5;
