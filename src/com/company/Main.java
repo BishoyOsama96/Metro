@@ -18,7 +18,7 @@ public class Main {
             nostation=v-u;
             extime=wtime*nostation;
             System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
-            System.out.println("your rout is "+st.line1.subList(Math.min(u,v),Math.max(u,v+1)));
+            System.out.println("your rout is "+st.line1.subList(Math.min(u,v),Math.max(u,v)));
             System.out.println("your ticket will cost: "+t+" pounds");
             System.out.println("expected time is "+extime+"m");
         }

@@ -3,10 +3,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 public class Station {
  private byte price;
-     public ArrayList<String> line1=new ArrayList<>(Arrays.asList("New El-Marg","El-Marg","Ezbet El-Nakhl","ain shams","El-Matareyya","Helmeyet El-Zaitoun","Hadayeq El-Zaitoun","Saray El-Qobba","Hammamat El-Qobba","Kobri El-Qobba",
-        "Manshiet El-Sadr","El-Demerdash","ghamra","Al Shohadaa","urabi","naser","sadat","Saad Zaghloul","AlSayyeda Zeinab","El-Malek El-Saleh",
-        "Mar Girgis","El-Zahraa","Dar El-Salam","Hadayeq El-Maadi","Maadi","Thakanat El-Maadi","Thakanat El-Maad","Tora El-Balad","opera"
-        ,"dokki","El Behoos","Kozzika","Tora El-Asmant","Tora El-Asmant","El-Maasara","Hadayeq Helwan","Wadi Hof","Helwan University","Ain Helwan","Helwan"));
+     public ArrayList<String> line1=new ArrayList<>(Arrays.asList(
+             "New El-Marg","El-Marg","Ezbet El-Nakhl","Ain Shams",
+             "El-Matareyya","Helmeyet El-Zaitoun","Hadayeq El-Zaitoun"
+             ,"Saray El-Qobba","Hammamat El-Qobba","Kobri El-Qobba",
+             "Manshiet El-Sadr","El-Demerdash","Ghamra","Al Shohadaa",
+             "Urabi","Naser","Sadat","Saad Zaghloul","AlSayyeda Zeinab",
+             "El-Malek El-Saleh", "Mar Girgis","El-Zahraa","Dar El-Salam"
+             ,"Hadayeq El-Maadi","Maadi","Thakanat El-Maadi","Thakanat El-Maad"
+             ,"Tora El-Balad","Kozzika","Tora El-Asmant","Tora El-Asmant",
+             "El-Maasara","Hadayeq Helwan","Wadi Hof","Helwan University",
+             "Ain Helwan","Helwan"));
     public ArrayList<String> line2=new ArrayList<>(Arrays.asList( "El-Mounib","Sakiat Mekky"," Omm El-Masryeen","Giza","Faisal","Cairo University "
             ,"El Bohoth","Dokki","Opera","Sadat","Mohamed Naguib","Attaba",
             "Al Shohadaa","Masarra","Rod El-Farag","St. Teresa","Khalafawy","Mezallat",
