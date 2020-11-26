@@ -1,6 +1,9 @@
 package com.company;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Station {
  private byte price;
     byte u, v,nostation,extime,wtime=4;
@@ -37,45 +40,85 @@ public  byte ticket(int Count){
         this.price = 10;}return this.price;
 }
 public void route(String start,String destination){
-  //  List temp = new ArrayList(src);
-   // Collections.reverse(temp);
 
-    if(line1.contains(start) && line1.contains(destination))
-    {
-        u= (byte) line1.indexOf(start);
-        v= (byte) line1.indexOf(destination);
-        t=ticket(Math.max(u,v)-Math.min(u,v));
-        nostation= (byte) (v-u);
-        extime= (byte) (wtime*nostation);
-        System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
-        System.out.println("your rout is "+line1.subList(Math.min(u,v),Math.max(u,v)));
-        System.out.println("your ticket will cost: "+t+" pounds");
-        System.out.println("expected time is "+extime+"m");
+    if (start.equalsIgnoreCase(destination)) System.out.println("enter valid destination");
+
+    else{
+        if(line1.contains(start) && line1.contains(destination))
+        {
+            u= (byte) line1.indexOf(start);
+            v= (byte) line1.indexOf(destination);
+            t=ticket(Math.max(u,v)-Math.min(u,v));
+            nostation= (byte) (v-u);
+            extime= (byte) (wtime*nostation);
+
+            System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
+
+            if(u>v){
+                List rev = new ArrayList(line1.subList(Math.min(u,v),Math.max(u,v)));
+                Collections.reverse(rev);
+                System.out.println("your rout is "+rev);
+            }
+
+            else System.out.println("your rout is "+line1.subList(Math.min(u,v),Math.max(u,v)));
+
+            System.out.println("your ticket will cost: "+t+" pounds");
+            System.out.println("expected time is "+extime+"m");
+        }
+
+        else if(line2.contains(start) && line2.contains(destination))
+        {
+            u= (byte) line2.indexOf(start);
+            v= (byte) line2.indexOf(destination);
+            t=ticket(Math.max(u,v)-Math.min(u,v));
+            nostation= (byte) (v-u);
+            extime= (byte) (wtime*nostation);
+
+            System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
+
+            if(u>v){
+                List rev = new ArrayList(line2.subList(Math.min(u,v),Math.max(u,v)));
+                Collections.reverse(rev);
+                System.out.println("your rout is "+rev);
+            }
+
+            else System.out.println("your rout is "+line2.subList(Math.min(u,v),Math.max(u,v)));
+
+            System.out.println("your ticket will cost: "+t+" pounds");
+            System.out.println("expected time is "+extime+"m");
+        }
+
+        if(line3.contains(start) && line3.contains(destination))
+        {
+            u= (byte) line3.indexOf(start);
+            v= (byte) line3.indexOf(destination);
+            t=ticket(Math.max(u,v)-Math.min(u,v));
+            nostation= (byte) (v-u);
+            extime= (byte) (wtime*nostation);
+
+            System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
+
+            if(u>v){
+                List rev = new ArrayList(line3.subList(Math.min(u,v),Math.max(u,v)));
+                Collections.reverse(rev);
+                System.out.println("your rout is "+rev);
+            }
+
+            else System.out.println("your rout is "+line3.subList(Math.min(u,v),Math.max(u,v)));
+
+            System.out.println("your ticket will cost: "+t+" pounds");
+            System.out.println("expected time is "+extime+"m");
+        }
+
+
+
+
+
+
+        else
+            System.out.println("There is no Metro line connects your start with your destination.");
     }
-    else if(line2.contains(start) && line2.contains(destination)){
-        u= (byte) line2.indexOf(start);
-        v= (byte) line2.indexOf(destination);
-        t=ticket(Math.max(u,v)-Math.min(u,v));
-        nostation= (byte) (v-u);
-        extime= (byte) (wtime*nostation);
-        System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
-        System.out.println("your rout is "+line2.subList(Math.min(u,v),Math.max(u,v+1)));
-        System.out.println("your ticket will cost: "+t+" pounds");
-        System.out.println("expected time is "+extime+"m");
-    }
-    else if(line3.contains(start) && line3.contains(destination)){
-        u= (byte) line3.indexOf(start);
-        v= (byte) line3.indexOf(destination);
-        t=ticket(Math.max(u,v)-Math.min(u,v));
-        nostation= (byte) (v-u);
-        extime= (byte) (wtime*nostation);
-        System.out.println("your path contains of "+(Math.max(u,v)-Math.min(u,v))+" Stations");
-        System.out.println("your rout is "+line3.subList(Math.min(u,v),Math.max(u,v+1)));
-        System.out.println("your ticket will cost: "+t+" pounds");
-        System.out.println("expected time is "+extime+"m");
-    }
-    else
-        System.out.println("There is no Metro line connects your start with your destination.");
+
 }
 
 }
