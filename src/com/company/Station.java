@@ -13,10 +13,12 @@ public class Station {
              "Hadayek El-Maadi","Maadi","Sakanat El-Maadi","Tora El-Balad",
              "Kozzika","Tora El-Asmant","El-Maasara","Hadayek Helwan",
              "Wadi Hof","Helwan University","Ain Helwan","Helwan"));
-    public ArrayList<String> line2=new ArrayList<>(Arrays.asList( "El-Mounib","Sakiat Mekky"," Omm El-Masryeen","Giza","Faisal","Cairo University "
-            ,"El Bohoth","Dokki","Opera","Sadat","Mohamed Naguib","Attaba",
-            "Al Shohadaa","Masarra","Rod El-Farag","St. Teresa","Khalafawy","Mezallat",
-            "Kolleyyet El-Zeraa","Shubra El-Kheima"));
+    public ArrayList<String> line2=new ArrayList<>(Arrays.asList(
+            "El-Mounib","Sakiat Mekky"," Omm El-Masryeen","Giza",
+            "Faisal","Cairo University","El Bohoth","Dokki",
+            "Opera","Sadat","Mohamed Naguib","Attaba",
+            "Al Shohadaa","Masarra","Rod El-Farag","St. Teresa",
+            "Khalafawy","Mezallat", "Kolleyyet El-Zeraa","Shubra El-Kheima"));
    public ArrayList<String> line3=new ArrayList<>(Arrays.asList("Airport","Ahmed Galal","Adly Mansour","El Haykestep","Omar Ibn El-Khattab",
             "Qobaa","Hesham Barakat","El-Nozha","Nadi El-Shams","Alf Maskan","Heliopolis Square",
             "Haroun","Al-Ahram","Koleyet El-Banat","Stadium","Fair Zone","Abbassiya",
