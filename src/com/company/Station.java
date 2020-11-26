@@ -26,6 +26,7 @@ public class Station {
            "Bab El-Shaaria","Attaba","Nasser","Maspero", "Zamalek", "Kit Kat","Sudan","Imbaba",
            "El-Bohy","El-Kawmeya Al-Arabiya","Ring Road","Rod El-Farag","El-Tawfikeya",
            "Wadi El-Nil","Gamaat El Dowal Al-Arabiya","Bulaq El-Dakroor","Cairo University"));
+
 public  byte ticket(int Count){
     if (Count >= 1 && Count <= 9) {
         this.price= 5;
